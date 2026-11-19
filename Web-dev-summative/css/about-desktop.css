@@ -1,0 +1,96 @@
+/* NAVIGATION */
+
+.top-nav {
+        top:25px;
+        right:40px;
+        font-size:1rem;
+}
+
+    .top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* MONOGRAM */
+.monogram-block {
+    margin-top:40px;
+    text-align:center;
+}
+
+.icon-top {
+    font-size:1.3rem;
+    margin-bottom:5px;
+}
+
+.icon-bottom {
+    font-size:1.1rem;
+    margin-top:5px;
+}
+
+.monogram-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* MONOGRAM LETTERS */
+.sa-letter {
+    font-family:'Times New Roman', serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:2.75rem;
+    background:linear-gradient(to bottom right,#d7bd67,#c0c0c0,#d4af37);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shimmer 3s linear infinite;
+    text-shadow:0 0 10px rgba(212,175,55,0.8);
+}
+
+/* ROSE GOLD ICONS */
+.rose-gold {
+    background:linear-gradient(to right,#b76e79,#e8c1c5);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight:bold;
+    text-shadow:0 0 10px rgba(183,110,121,0.8);
+}
+
+/* VINE */
+.vine {
+    width:3px;
+    height:35px;
+    background:linear-gradient(to bottom,#d7bd67,#c0c0c0,#d4a537);
+    border-radius:4px;
+    box-shadow:0 0 10px rgba(212,175,55,0.7);
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.75rem;
+    background:linear-gradient(to right,#d7bd67,#c0c0c0);
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:3px;
+    margin:10px 0 5px 0;
+    text-transform:uppercase;
+    text-align:center;
+}

@@ -1,0 +1,93 @@
+
+/* NAVIGATION */
+
+.top-nav {
+        top:25px;
+        right:40px;
+        font-size:1rem;
+}
+
+    .top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* MONOGRAM */
+    .monogram-block {
+        margin-top:40px;
+    }
+
+    .icon-top {
+        font-size:1.3rem;
+        margin-bottom:10px;
+    }
+
+    .icon-bottom {
+        font-size:1.1rem;
+        margin-top:10px;
+    }
+
+    .monogram-center {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+    }
+
+/* MAIN TITLES */
+    .main-title {
+        font-size:2rem;
+        color:#c8b882; /* LIGHT GOLD */
+        margin-top:40px;
+        margin-bottom:40px;
+    }
+
+    /* SECTION TITLE BUTTON */
+    .section-title-btn {
+        font-size:1.1rem;
+        padding:12px 24px;
+    }
+    
+    /* FILTER BUTTON SPACING */
+    .filter-container {
+        margin-top:20px;
+        margin-bottom:50px;
+    }
+
+    /* PRODUCT GRID — 3 COLUMNS */
+    .product-grid-men,
+    .product-grid-women {
+        display:grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap:40px;
+        padding:20px 60px;
+    }
+
+    /* FULL IMAGES — SMALLER, UNIFORM */
+    .product-card img {
+        width:100%;
+        max-height:240px;
+        object-fit:contain;
+        border-radius:10px;
+    }
+
+    
+    footer {
+        margin-bottom:5px;
+    }
+

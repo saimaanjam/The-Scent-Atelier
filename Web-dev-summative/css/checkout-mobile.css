@@ -1,0 +1,290 @@
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION */
+
+.top-nav {
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:0.85rem;
+}
+
+.top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+    cursor:pointer; /* IMPORTANT for mobile tap behaviour */
+}
+
+/* Mobile tap colour */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* MONOGRAM */
+.monogram-block {
+    margin-top:40px;
+    text-align:center;
+}
+
+.icon-top {
+    font-size:1.3rem;
+    margin-bottom:5px;
+}
+
+.icon-bottom {
+    font-size:1.1rem;
+    margin-top:5px;
+}
+
+.monogram-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* MONOGRAM LETTERS */
+.sa-letter {
+    font-family:'Times New Roman', serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:2.75rem;
+    background:linear-gradient(to bottom right,#d7bd67,#c0c0c0,#d4af37);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shimmer 3s linear infinite;
+    text-shadow:0 0 10px rgba(208, 188, 122, 0.8);
+}
+
+/* ROSE GOLD ICONS */
+.rose-gold {
+    background:linear-gradient(to right,#b76e79,#e8c1c5);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight:bold;
+    text-shadow:0 0 10px rgba(183,110,121,0.8);
+}
+
+/* VINE */
+.vine {
+    width:3px;
+    height:35px;
+    background:linear-gradient(to bottom,#d4af37,#c0c0c0);
+    border-radius:4px;
+    box-shadow:0 0 10px rgba(200, 178, 104, 0.7);
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.75rem;
+    background:linear-gradient(to right,#d7bd67,#c0c0c0,#d4af37);
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:3px;
+    margin:10px 0 5px 0;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+.checkout-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.checkout-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #d4bb6b;
+    letter-spacing: 2px;
+}
+
+.checkout-title span {
+    background: linear-gradient(to right, #f7c6d9, #e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.checkout-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 1.3rem;
+    background: linear-gradient(to right, #f7c6d9, #e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+.checkout-details {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.checkout-details label {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.checkout-details input,
+.checkout-details textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: #fff;
+}
+
+.checkout-summary {
+    background: #111;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.summary-line,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    color: #f7c6d9;
+    font-weight: bold;
+}
+
+.place-order-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: linear-gradient(to right, #d4af37, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.place-order-btn:hover {
+    opacity: 0.7;
+}
+
+/* LUXURY MODAL POPUP */
+.luxury-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.75);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99999;
+}
+
+.luxury-modal-content {
+    background: #111;
+    padding: 25px 35px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 25px rgba(247,198,217,0.6);
+    animation: fadeIn 0.4s ease;
+}
+
+.luxury-modal-content h3 {
+    background: linear-gradient(to right,#f7c6d9,#e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.luxury-modal-content p {
+    color: #ccc;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.luxury-close-btn {
+    padding: 10px 20px;
+    background: #f7c6d9;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+
+.luxury-close-btn:hover {
+    background: #e8a6b8;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+
+#orderItems {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+/* FOOTER */
+footer {
+    width:100%;
+    text-align:center;
+    font-size:0.75rem;
+    padding:10px 0;
+    background:black;
+    margin-top:40px;
+}

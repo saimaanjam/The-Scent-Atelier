@@ -1,0 +1,111 @@
+@media (min-width: 768px) {
+
+    /* HEADER */
+    .header {
+        padding:40px 20px;
+        text-align:center;
+        position:relative;
+    }
+
+    /* NAVIGATION */
+
+.top-nav {
+        top:25px;
+        right:40px;
+        font-size:1rem;
+}
+
+    .top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+ 
+/* MONOGRAM */
+    .monogram-block {
+        margin-top:40px;
+    }
+
+    .icon-top {
+        font-size:1.3rem;
+        margin-bottom:10px;
+    }
+
+    .icon-bottom {
+        font-size:1.1rem;
+        margin-top:10px;
+    }
+
+    .monogram-center {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+    }
+
+    /* BRAND NAME */
+    .brand-name {
+        font-size:2rem;
+        margin-top:15px;
+    }
+
+    /* HERO SECTION */
+
+    
+    .hero {
+        display:flex;
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:40px 60px;
+    }
+
+    .hero-text {
+        max-width:55%;
+    }
+
+    .hero-buttons {
+        display:flex;
+        gap:10px;
+        margin-top:10px;
+    }
+
+    /* HERO IMAGE */
+
+    .hero-image {
+        width: 45%;
+        display: flex;
+        justify-content: center;
+        height: 350px; /* fixed height for desktop */
+        overflow: hidden;
+    }
+
+    .index-slideshow {
+        width:100%;
+        max-height:60vh;
+        margin-top:20px;
+    }
+
+    /* FOOTER */
+    footer {
+        /*margin-top:40px,*/
+        margin-bottom:5px;
+    }
+}
+
+
+

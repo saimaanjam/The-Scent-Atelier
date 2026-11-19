@@ -1,0 +1,264 @@
+/* GLOBAL */
+body {
+    background:black;
+    color:white;
+    margin:0;
+    font-family:Arial, sans-serif;
+    overflow-x:hidden;
+}
+
+/* NAVIGATION */
+
+.top-nav {
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:0.85rem;
+}
+
+.top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+    cursor:pointer; /* IMPORTANT for mobile tap behaviour */
+}
+
+/* Mobile tap colour */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* HEADER */
+.tsa-header {
+    text-align:center;
+    padding-top:80px;
+}
+
+.tsa-icon {
+    font-size:1.3rem;
+    background:linear-gradient(to right,#b76e79,#e8c1c5);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.tsa-monogram {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+.sa-letter {
+    font-family:'Times New Roman', serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:2.75rem;
+    background:linear-gradient(to bottom right,#d7bd67,#c0c0c0,#d4af37);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.vine {
+    width:3px;
+    height:35px;
+    background:linear-gradient(to bottom,#d4af37,#c0c0c0);
+    border-radius:4px;
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.75rem;
+    background:linear-gradient(to right,#d7bd67,#c0c0c0);
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:3px;
+    margin:10px 0 5px 0;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/* Metallic light pink title for Women's Edit */
+body.products-her .main-title {
+    background: linear-gradient(to right, #f7c6d9, #e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(247,198,217,0.6);
+}
+
+/* MAIN TITLES (MEN’S EDIT, OUD COLLECTION, FRAGRANCE COLLECTION) */
+
+.main-title {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.5rem;
+    color:#dcc67f; /* SAME LIGHT GOLD AS BRAND NAME */
+    letter-spacing:3px;
+    margin-top:25px;
+}
+
+/* SECTION TITLE BUTTON (MEN’S EDIT BUTTON) */
+.section-title-btn {
+    display:inline-block;
+    margin-top:25px;
+    padding:10px 20px;
+    font-size:1rem;
+    font-weight:600;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+
+/* FILTER BUTTONS */
+.filter-container {
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.filter-btn {
+    padding:8px 18px;
+    border-radius:6px;
+    font-size:0.85rem;
+    font-weight:600;
+    letter-spacing:1px;
+    background:black;
+}
+
+/* BUTTONS */
+.hero-buttons {
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+    justify-content: center;
+}
+
+.hero-buttons button {
+    padding:10px 18px;
+    border-radius:6px;
+    font-size:0.85rem;
+    font-weight:600;
+    letter-spacing:1px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.hero-buttons button:hover {
+    transform:scale(1.05);
+}
+
+.btn-explore {
+    background:linear-gradient(to right,#d4af37,#f7c6d9);
+    border:none;
+    color:white;
+}
+.btn-gold {
+    background:white;
+    border:2px solid #d4af37;
+    color:#d4af37;
+}
+.btn-pink {
+    background:white;
+    border:2px solid #f7c6d9;
+    color:#f7c6d9;
+}
+
+/* OUD BUTTON — white with gold border + gold text */
+.gold-btn {
+    background: white;
+    border: 2px solid #f7d65c;   /* gold border */
+    color: #f7d65c;              /* gold text */
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.gold-btn:hover {
+    background: #f7d65c;         /* gold fill on hover */
+    color: black;                /* black text on hover */
+}
+
+
+/* FRAGRANCE BUTTON — white with pink border + pink text */
+.pink-btn {
+    background: white;
+    border: 2px solid #f7c6d9;   /* pink border */
+    color: #f7c6d9;              /* pink text */
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pink-btn:hover {
+    background: #f7c6d9;         /* pink fill on hover */
+    color: black;                /* black text on hover */
+}
+
+
+/* PRODUCT GRID — MOBILE */
+.product-grid-men,
+.product-grid-women {
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+    padding:20px;
+}
+
+/* PRODUCT CARD */
+.product-card {
+    background:#111;
+    padding:15px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.product-card img {
+    width:100%;
+    max-height:260px;
+    object-fit:contain;
+    border-radius:10px;
+}
+
+.product-card button {
+    margin-top:10px;
+    padding:10px 18px;
+    background:#f6f4ef;
+    border:2px solid #f7d65c;
+    border-radius:6px;
+    font-size:0.85rem;
+    font-weight:600;
+    color:black;
+}
+.product-card button:hover {
+    background:black;
+    color:#f7d65c;
+}
+
+/* FOOTER */
+footer {
+    width:100%;
+    text-align:center;
+    font-size:0.75rem;
+    padding:15px 0;
+    background:black;
+    margin-top:40px;
+}

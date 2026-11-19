@@ -1,0 +1,53 @@
+@media (min-width: 900px) {
+
+    /* NAVIGATION */
+    .top-nav {
+        top:25px;
+        right:40px;
+        font-size:1rem;
+    }
+
+    /* MONOGRAM */
+    .monogram-block {
+        margin-top:40px;
+    }
+
+    .icon-top {
+        font-size:1.3rem;
+        margin-bottom:10px;
+    }
+
+    .icon-bottom {
+        font-size:1.1rem;
+        margin-top:10px;
+    }
+
+    .monogram-center {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+    }
+
+    /* BRAND NAME */
+    .brand-name {
+        font-size:2rem;
+        margin-top:20px;
+    }
+
+    /* Desktop layout */
+    .cart-container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .cart-summary {
+        width: 100%;
+        max-width: 500px;
+    }
+    /* FOOTER */
+    footer {
+        /*margin-top:40px,*/
+        margin-bottom:5px;
+    }
+}

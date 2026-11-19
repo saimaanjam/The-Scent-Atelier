@@ -1,0 +1,293 @@
+/* GLOBAL BACKGROUND */
+body {
+    background: #000;
+    color: white;
+}
+
+/* NAVIGATION */
+.top-nav {
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:0.85rem;
+}
+.top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+}
+
+/* MONOGRAM */
+.monogram-block {
+    margin-top:40px;
+    text-align:center;
+}
+
+.icon-top {
+    font-size:1.3rem;
+    margin-bottom:5px;
+}
+
+.icon-bottom {
+    font-size:1.1rem;
+    margin-top:5px;
+}
+
+.monogram-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* MONOGRAM LETTERS */
+.sa-letter {
+    font-family:'Times New Roman', serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:2.75rem;
+    background:linear-gradient(to bottom right,#d7bd67,#c0c0c0,#d4af37);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shimmer 3s linear infinite;
+    text-shadow:0 0 10px rgba(216, 190, 102, 0.8);
+}
+
+/* ROSE GOLD ICONS */
+.rose-gold {
+    background:linear-gradient(to right,#b76e79,#e8c1c5);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight:bold;
+    text-shadow:0 0 10px rgba(183,110,121,0.8);
+}
+
+/* VINE */
+.vine {
+    width:3px;
+    height:35px;
+    background:linear-gradient(to bottom,#d4bb6b,#c0c0c0);
+    border-radius:4px;
+    box-shadow:0 0 10px rgba(216, 194, 120, 0.7);
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.75rem;
+    background:linear-gradient(to right,#d7bd67,#c0c0c0,#d4af37);
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:3px;
+    margin:10px 0 5px 0;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/* MAIN TITLE — CENTRE + METALLIC GOLD */
+.main-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 20px;
+
+    background: linear-gradient(to right, #d7bd67, #e8e6a6, #f7c6d9);
+    -webkit-background-clip: text;
+    color: transparent;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(247, 198, 217, 0.5);
+}
+
+
+/* CART PAGE BASE */
+.cart-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* CART ITEMS LIST */
+#cartItems {
+    flex: 2;
+}
+
+/* EMPTY CART MESSAGE */
+.empty-cart {
+    font-size: 1.2rem;
+    color: #f7c6d9;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* CART ITEM */
+.cart-item {
+    display: flex;
+    background: #111;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+/* PRODUCT IMAGE */
+.cart-img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* PRODUCT INFO */
+.cart-info {
+    flex: 1;
+}
+
+.cart-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    background: linear-gradient(to right,#f7c6d9,#e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.cart-info p {
+    margin: 5px 0;
+    color: #ccc;
+    font-size: 0.9rem;
+}
+
+/* QUANTITY CONTROL */
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.qty-btn {
+    background: #f7c6d9;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+
+.qty-btn:hover {
+    background: #e8a6b8;
+}
+
+/* REMOVE BUTTON */
+.remove-btn {
+    background: transparent;
+    border: 2px solid #f7c6d9;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #f7c6d9;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.remove-btn:hover {
+    background: #f7c6d9;
+    color: black;
+}
+
+/* ITEM TOTAL PRICE */
+.item-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f7c6d9;
+    margin-left: 20px;
+}
+
+/* ORDER SUMMARY */
+.cart-summary {
+    flex: 1;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+
+.cart-summary h2 {
+    font-size: 1.4rem;
+    background: linear-gradient(to right,#f7c6d9,#e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+/* SUMMARY LINES */
+.summary-line,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: #ccc;
+    font-size: 1rem;
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f7c6d9;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right,#d4af37,#ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.checkout-btn:hover {
+    opacity: 0.7;
+}
+
+/* RESPONSIVE — MOBILE */
+@media (max-width: 600px) {
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .item-total {
+        margin: 10px 0 0 0;
+    }
+}
+
+/* FOOTER */
+footer {
+    width:100%;
+    text-align:center;
+    font-size:0.75rem;
+    padding:10px 0;
+    background:black;
+    margin-top:40px;
+    margin-bottom:5px;
+}

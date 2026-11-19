@@ -1,0 +1,27 @@
+@media (min-width: 900px) {
+
+    .confirmation-container {
+        margin-top: 80px;
+        padding: 40px;
+        max-width: 600px;
+    }
+
+    .confirmation-title {
+        font-size: 2.4rem;
+        letter-spacing: 3px;
+    }
+
+    .confirmation-message {
+        font-size: 1rem;
+        padding: 0 20px;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .return-btn {
+        padding: 14px 26px;
+        font-size: 1rem;
+    }
+}

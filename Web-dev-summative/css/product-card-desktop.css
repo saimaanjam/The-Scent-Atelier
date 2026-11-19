@@ -1,0 +1,96 @@
+@media (min-width: 768px) {
+
+/* NAVIGATION */
+
+.top-nav {
+        top:25px;
+        right:40px;
+        font-size:1rem;
+}
+
+    .top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+    
+
+/* MONOGRAM */
+    .monogram-block {
+        margin-top:40px;
+    }
+
+    .icon-top {
+        font-size:1.3rem;
+        margin-bottom:10px;
+    }
+
+    .icon-bottom {
+        font-size:1.1rem;
+        margin-top:10px;
+    }
+
+    .monogram-center {
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        gap:15px;
+    }
+
+    /* BRAND NAME */
+    .brand-name {
+        font-size:2rem;
+        margin-top:15px;
+    }
+
+    /* PRODUCT IMAGE — larger on desktop */
+    .product-img {
+        width:200px;
+        margin:30px auto;
+    }
+
+    /* PRODUCT TITLE — slightly larger */
+    .product-title {
+        font-size:1.5rem;
+        letter-spacing:3px;
+    }
+
+    /* DESCRIPTION + NOTES — wider layout */
+    .description,
+    .notes {
+        padding:0 80px;
+        font-size:1rem;
+    }
+
+    /* SIZE BUTTONS — spaced better */
+    .size-buttons button {
+        padding:12px 22px;
+        font-size:1rem;
+    }
+
+    /* ADD TO CART BUTTON — larger */
+    .add-cart {
+        padding:14px 26px;
+        font-size:1rem;
+    }
+
+    /* FOOTER */
+    footer {
+        /*margin-top:40px,*/
+        margin-bottom:5px;
+    }
+}

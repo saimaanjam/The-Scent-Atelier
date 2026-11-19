@@ -1,0 +1,166 @@
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* MONOGRAM */
+.monogram-block {
+    margin-top:40px;
+    text-align:center;
+}
+
+.icon-top {
+    font-size:1.3rem;
+    margin-bottom:5px;
+}
+
+.icon-bottom {
+    font-size:1.1rem;
+    margin-top:5px;
+}
+
+.monogram-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* MONOGRAM LETTERS */
+.sa-letter {
+    font-family:'Times New Roman', serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:2.75rem;
+    background:linear-gradient(to bottom right,#d7bd67,#c0c0c0,#d4af37);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shimmer 3s linear infinite;
+    text-shadow:0 0 10px rgba(212,175,55,0.8);
+}
+
+/* ROSE GOLD ICONS */
+.rose-gold {
+    background:linear-gradient(to right,#b76e79,#e8c1c5);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight:bold;
+    text-shadow:0 0 10px rgba(183,110,121,0.8);
+}
+
+/* VINE */
+.vine {
+    width:3px;
+    height:35px;
+    background:linear-gradient(to bottom,#d7bd67,#c0c0c0,#d4a537);
+    border-radius:4px;
+    box-shadow:0 0 10px rgba(212,175,55,0.7);
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.75rem;
+    background:linear-gradient(to right,#d7bd67,#c0c0c0);
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:3px;
+    margin:10px 0 5px 0;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+
+/* Centered container */
+.confirmation-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background: #111;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.08);
+    text-align: center;
+}
+
+/* Title */
+.confirmation-title {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #d4af37, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+/* Message */
+.confirmation-message {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* Section title */
+.section-title {
+    font-size: 1.2rem;
+    background: linear-gradient(to right, #f7c6d9, #e8a6b8);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+/* Order items */
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    color: #ccc;
+}
+
+/* Summary lines */
+.summary-line,
+.summary-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.summary-total {
+    font-size: 1.2rem;
+    color: #f7c6d9;
+    font-weight: bold;
+}
+
+/* Button */
+.return-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #f7c6d9;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    transition: 0.3s;
+}
+
+.return-btn:hover {
+    background: #e8a6b8;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px 0;
+    background: black;
+    margin-top: 40px;
+}

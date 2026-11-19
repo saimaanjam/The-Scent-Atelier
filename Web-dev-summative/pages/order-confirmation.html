@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Scent Atelier — Order Confirmed</title>
+
+    <link rel="stylesheet" href="../css/order-confirmation-mobile.css">
+    <link rel="stylesheet" href="../css/order-confirmation-desktop.css" media="screen and (min-width: 900px)">
+</head>
+
+<body>
+
+    <!-- MONOGRAM + BRAND -->
+    <div class="monogram-block">
+        <div class="rose-gold icon-top">🌹</div>
+
+        <div class="monogram-center">
+            <span class="sa-letter">S</span>
+            <div class="vine"></div>
+            <span class="sa-letter">A</span>
+        </div>
+
+        <div class="rose-gold icon-bottom">🌿</div>
+    </div>
+
+    <div class="brand-name">The Scent Atelier</div>
+
+    <!-- CONFIRMATION CONTENT -->
+    <div class="confirmation-container">
+
+        <h1 class="confirmation-title">ORDER CONFIRMED</h1>
+
+        <p class="confirmation-message">
+            Thank you for your purchase. Your order has been successfully placed and is now being prepared with care.
+            A confirmation email will be sent shortly.
+        </p>
+
+        <h2 class="section-title">Order Summary</h2>
+
+        <div id="orderItems"></div>
+
+        <div class="summary-line">
+            <span>Subtotal</span>
+            <span id="subtotal">£0</span>
+        </div>
+
+        <div class="summary-line">
+            <span>Shipping</span>
+            <span id="shipping">£10</span>
+        </div>
+
+        <div class="summary-total">
+            <span>Total</span>
+            <span id="total">£0</span>
+        </div>
+
+        <button class="return-btn" onclick="window.location.href='products-all.html'">
+            Continue Shopping
+        </button>
+
+    </div>
+
+    <script src="../js/order-confirmation.js"></script>
+
+    <footer>
+        © 2026 The Scent Atelier — Curating Timeless scents — All Rights Reserved
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+body {
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION */
+
+.top-nav {
+    position:absolute;
+    top:20px;
+    right:25px;
+    font-size:0.85rem;
+}
+
+.top-nav a {
+    margin-left:18px;
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    letter-spacing:1px;
+    transition:0.3s ease;   /* smooth colour change */
+    cursor:pointer; /* IMPORTANT for mobile tap behaviour */
+}
+
+/* Mobile tap colour */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* HOVER — metallic pink */
+.top-nav a:hover {
+    color:#f7c6d9; /* metallic pink */
+}
+
+/* ACTIVE / CLICKED — metallic pink */
+.top-nav a:active,
+.top-nav a:focus {
+    color:#f7c6d9;
+}
+
+/* MONOGRAM */
+.monogram-block {
+    margin-top:40px;
+    text-align:center;
+}
+
+.icon-top {
+    font-size:1.3rem;
+    margin-bottom:5px;
+}
+
+.icon-bottom {
+    font-size:1.1rem;
+    margin-top:5px;
+}
+
+.monogram-center {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+}
+
+/* MONOGRAM LETTERS */
+.sa-letter {
+    font-family:'Times New Roman', serif;
+    font-style:italic;
+    font-weight:900;
+    font-size:2.75rem;
+    background:linear-gradient(to bottom right,#d7bd67,#c0c0c0,#d4af37);
+    background-size:200% 200%;
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shimmer 3s linear infinite;
+    text-shadow:0 0 10px rgba(212,175,55,0.8);
+}
+
+/* ROSE GOLD ICONS */
+.rose-gold {
+    background:linear-gradient(to right,#b76e79,#e8c1c5);
+    -webkit-background-clip:text;
+    color:transparent;
+    font-weight:bold;
+    text-shadow:0 0 10px rgba(183,110,121,0.8);
+}
+
+/* VINE */
+.vine {
+    width:3px;
+    height:35px;
+    background:linear-gradient(to bottom,#d7bd67,#c0c0c0,#d4a537);
+    border-radius:4px;
+    box-shadow:0 0 10px rgba(212,175,55,0.7);
+}
+
+/* BRAND NAME */
+.brand-name {
+    font-family:'Didot','Bodoni MT',serif;
+    font-weight:600;
+    font-size:1.75rem;
+    background:linear-gradient(to right,#d7bd67,#c0c0c0);
+    -webkit-background-clip:text;
+    color:transparent;
+    letter-spacing:3px;
+    margin:10px 0 5px 0;
+    text-transform:uppercase;
+    text-align:center;
+}
+
+/* Container */
+.about-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+}
+
+/* Title */
+.about-title {
+    font-size: 2.0rem;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    background: linear-gradient(to right, #d46ba6, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Intro paragraph */
+.about-intro {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+/* Section headings */
+.about-heading {
+    font-size: 1.4rem;
+    font-family: 'Playfair Display', serif;
+    background: linear-gradient(to right, #d3db75, #e8e7a6);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Body text */
+.about-text {
+    font-size: 0.95rem;
+    color: #ccc;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Signature line */
+.signature-line {
+    margin: 50px 0 30px;
+    font-size: 1.1rem;
+    font-family: 'Playfair Display', serif;
+    color: #f7c6d9;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+/* Button */
+.about-btn {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #e5efb5, #d4e8a6);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #000;
+    transition: 0.3s ease;
+    width: 100%;
+    max-width: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 12px rgba(247,198,217,0.4);
+}
+
+.about-btn:hover {
+    background: linear-gradient(to right, #e8a6b8, #f7c6d9);
+    box-shadow: 0 0 18px rgba(247,198,217,0.6);
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    padding: 10px 0;
+    background: black;
+    margin-top: 40px;
+}

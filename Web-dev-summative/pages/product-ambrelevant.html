@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LV Ambre Levant — The Scent Atelier</title>
+    
+    <!-- UNIVERSAL PRODUCT CSS -->
+    <link rel="stylesheet" href="../css/product-card-mobile.css">
+    <link rel="stylesheet" href="../css/product-card-desktop.css" media="screen and (min-width: 768px)">
+  
+        
+</head>
+
+<body>
+
+    <!-- CLOSE BUTTON -->
+    <a onclick="goBack()" class="close-btn">×</a>
+    
+    
+    <!-- HEADER -->
+    <header style="text-align:center; padding:20px; position:relative;">
+
+        <nav class="top-nav">
+            <a href="index.html">Home</a>
+            <a href="products-all.html">Products</a>
+            <a href="products-his.html">Men</a>
+            <a href="products-her.html">Women</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+
+        <!-- MONOGRAM (EXACT MATCH TO HOME PAGE) -->
+    <div style="text-align:center; margin-top:60px;">
+
+        <!-- Rose -->
+        <div style="
+            font-size:1.3rem;
+            margin-bottom:5px;
+            background:linear-gradient(to right,#b76e79,#e8c1c5);
+            -webkit-background-clip:text;
+            color:transparent;
+            font-weight:bold;
+            text-shadow:0 0 10px rgba(183,110,121,0.8);
+        ">🌹</div>
+
+        <!-- S • Vine • A -->
+        <div style="display:flex; justify-content:center; align-items:center; gap:15px;">
+            <span class="sa-letter">S</span>
+            <div class="vine"></div>
+            <span class="sa-letter">A</span>
+        </div>
+
+        <!-- Leaf -->
+        <div style="
+            font-size:1.1rem;
+            margin-top:5px;
+            background:linear-gradient(to right,#b76e79,#e8c1c5);
+            -webkit-background-clip:text;
+            color:transparent;
+            font-weight:bold;
+            text-shadow:0 0 10px rgba(183,110,121,0.8);
+        ">🌿</div>
+    </div>
+
+    <!-- BRAND NAME -->
+    <div style="
+        font-family:'Didot','Bodoni MT',serif;
+        font-weight:600;
+        font-size:1.75rem;
+        background:linear-gradient(to right,#d4af37,#f7c6d9);
+        -webkit-background-clip:text;
+        color:transparent;
+        letter-spacing:3px;
+        margin-top:10px;
+        text-transform:uppercase;
+    ">
+        The Scent Atelier
+    </div>
+
+        
+    </header>
+
+    <!-- PRODUCT IMAGE -->
+    <img src="../media/images/lv ambre levant.png" alt="LV Ambre Levant" class="product-img">
+
+    <!-- PRODUCT TITLE -->
+    <div class="product-title">LV Ambre Levant</div>
+
+    <!-- DESCRIPTION -->
+    <div class="section-title">Description</div>
+    <div class="description">
+        A radiant amber fragrance blending warm resins and glowing citrus for a luminous signature.
+    </div>
+
+    <!-- NOTES -->
+    <div class="section-title">Fragrance Notes</div>
+    <div class="notes">
+        <strong>Top Notes:</strong> Bergamot, Orange, Pink Pepper<br>
+        <strong>Heart Notes:</strong> Amber, Labdanum, Benzoin<br>
+        <strong>Base Notes:</strong> Vanilla, Musk, Woods
+    </div>
+
+    <!-- SIZE OPTIONS + PRICES -->
+    <div class="section-title">Available Sizes</div>
+    <div class="size-buttons">
+        <button data-size="10ml" data-price="42">10ml</button>
+        <div class="price-line">£42</div>
+
+        <button data-size="30ml" data-price="90">30ml</button>
+        <div class="price-line">£90</div>
+
+        <button data-size="50ml" data-price="145">50ml</button>
+        <div class="price-line">£145</div>
+
+        <button data-size="100ml" data-price="230">100ml</button>
+        <div class="price-line">£230</div>
+    </div>
+
+    <!-- ADD TO CART -->
+    <button class="add-cart" id="addCartBtn">Add to Cart</button>
+
+    <footer>
+        © 2026 The Scent Atelier — Curating Timeless scents - All Rights Reserved
+    </footer>
+
+    <!-- FUNCTIONALITY SCRIPT -->
+    <script src="../js/added-to-cart-popup.js"></script>
+
+    <script>
+        let selectedSize = null;
+
+        const sizeButtons = document.querySelectorAll('.size-buttons button');
+
+        sizeButtons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sizeButtons.forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                selectedSize = {
+                    size: btn.getAttribute('data-size'),
+                    price: btn.getAttribute('data-price')
+                };
+            });
+        });
+
+       document.getElementById('addCartBtn').addEventListener('click', () => {
+    if (!selectedSize) {
+        alert("Please select a size first.");
+        return;
+    }
+
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    // MERGE DUPLICATES — FIXED PRODUCT NAME
+    let existing = cart.find(item =>
+        item.product === "LV Ambre Levant" &&
+        item.size === selectedSize.size
+    );
+
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({
+            product: "LV Ambre Levant",
+            size: selectedSize.size,
+            price: Number(selectedSize.price),
+            image: "../media/images/lv ambre levant.png",
+            quantity: 1
+        });
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    showCartPopup();
+    updateCartCount();
+});
+
+    </script>
+    <script>
+        function goBack() {
+            if (document.referrer) {
+                // User came from another page → go back
+                history.back();
+            } else {
+                // No referrer → fallback to Men’s Edit
+                window.location.href = 'products-his.html';
+            }
+        }
+    </script>
+
+<div id="cartPopup" class="cart-popup">
+    Added to cart ✓
+</div>
+
+</body>
+</html>
